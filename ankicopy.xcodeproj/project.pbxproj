@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		CE7C66382551D5DD00C37C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66372551D5DD00C37C65 /* AppDelegate.swift */; };
 		CE7C663A2551D5DD00C37C65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66392551D5DD00C37C65 /* SceneDelegate.swift */; };
-		CE7C663C2551D5DD00C37C65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C663B2551D5DD00C37C65 /* ViewController.swift */; };
+		CE7C663C2551D5DD00C37C65 /* AnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C663B2551D5DD00C37C65 /* AnkiViewController.swift */; };
 		CE7C663F2551D5DD00C37C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C663D2551D5DD00C37C65 /* Main.storyboard */; };
 		CE7C66422551D5DD00C37C65 /* ankicopy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66402551D5DD00C37C65 /* ankicopy.xcdatamodeld */; };
 		CE7C66442551D5DF00C37C65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7C66432551D5DF00C37C65 /* Assets.xcassets */; };
 		CE7C66472551D5E000C37C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7C66452551D5E000C37C65 /* LaunchScreen.storyboard */; };
+		CE7C66532551D63300C37C65 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66522551D63300C37C65 /* Card.swift */; };
+		CE7C66562551D94000C37C65 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66552551D94000C37C65 /* CardTableViewCell.swift */; };
+		CE7C665A2551DCA300C37C65 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66592551DCA300C37C65 /* NewCardViewController.swift */; };
+		CEAB141A2551E5C3001E8369 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB14192551E5C3001E8369 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE7C66342551D5DD00C37C65 /* ankicopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ankicopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C66372551D5DD00C37C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7C66392551D5DD00C37C65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE7C663B2551D5DD00C37C65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE7C663B2551D5DD00C37C65 /* AnkiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiViewController.swift; sourceTree = "<group>"; };
 		CE7C663E2551D5DD00C37C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE7C66412551D5DD00C37C65 /* ankicopy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ankicopy.xcdatamodel; sourceTree = "<group>"; };
 		CE7C66432551D5DF00C37C65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7C66462551D5E000C37C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7C66482551D5E000C37C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7C66522551D63300C37C65 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CE7C66552551D94000C37C65 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		CE7C66592551DCA300C37C65 /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
+		CEAB14192551E5C3001E8369 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,44 @@
 		CE7C66362551D5DD00C37C65 /* ankicopy */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C66512551D61400C37C65 /* View */,
+				CE7C66502551D60A00C37C65 /* Controller */,
+				CE7C664F2551D60000C37C65 /* Model */,
 				CE7C66372551D5DD00C37C65 /* AppDelegate.swift */,
 				CE7C66392551D5DD00C37C65 /* SceneDelegate.swift */,
-				CE7C663B2551D5DD00C37C65 /* ViewController.swift */,
-				CE7C663D2551D5DD00C37C65 /* Main.storyboard */,
 				CE7C66432551D5DF00C37C65 /* Assets.xcassets */,
 				CE7C66452551D5E000C37C65 /* LaunchScreen.storyboard */,
 				CE7C66482551D5E000C37C65 /* Info.plist */,
 				CE7C66402551D5DD00C37C65 /* ankicopy.xcdatamodeld */,
 			);
 			path = ankicopy;
+			sourceTree = "<group>";
+		};
+		CE7C664F2551D60000C37C65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C66522551D63300C37C65 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE7C66502551D60A00C37C65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C663B2551D5DD00C37C65 /* AnkiViewController.swift */,
+				CE7C66592551DCA300C37C65 /* NewCardViewController.swift */,
+				CEAB14192551E5C3001E8369 /* CardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE7C66512551D61400C37C65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C663D2551D5DD00C37C65 /* Main.storyboard */,
+				CE7C66552551D94000C37C65 /* CardTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7C663C2551D5DD00C37C65 /* ViewController.swift in Sources */,
+				CE7C663C2551D5DD00C37C65 /* AnkiViewController.swift in Sources */,
+				CE7C66562551D94000C37C65 /* CardTableViewCell.swift in Sources */,
+				CE7C665A2551DCA300C37C65 /* NewCardViewController.swift in Sources */,
 				CE7C66382551D5DD00C37C65 /* AppDelegate.swift in Sources */,
+				CEAB141A2551E5C3001E8369 /* CardViewController.swift in Sources */,
+				CE7C66532551D63300C37C65 /* Card.swift in Sources */,
 				CE7C663A2551D5DD00C37C65 /* SceneDelegate.swift in Sources */,
 				CE7C66422551D5DD00C37C65 /* ankicopy.xcdatamodeld in Sources */,
 			);
