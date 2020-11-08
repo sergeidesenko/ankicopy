@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		369AEA06CA6176371EFDE197 /* Pods_ankicopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FD0038A14CD287A35681F3 /* Pods_ankicopy.framework */; };
 		CE7C66382551D5DD00C37C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66372551D5DD00C37C65 /* AppDelegate.swift */; };
 		CE7C663A2551D5DD00C37C65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66392551D5DD00C37C65 /* SceneDelegate.swift */; };
 		CE7C663C2551D5DD00C37C65 /* AnkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C663B2551D5DD00C37C65 /* AnkiViewController.swift */; };
@@ -18,9 +19,13 @@
 		CE7C66562551D94000C37C65 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66552551D94000C37C65 /* CardTableViewCell.swift */; };
 		CE7C665A2551DCA300C37C65 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C66592551DCA300C37C65 /* NewCardViewController.swift */; };
 		CEAB141A2551E5C3001E8369 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB14192551E5C3001E8369 /* CardViewController.swift */; };
+		CEAB141D25530509001E8369 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB141C25530509001E8369 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47FD0038A14CD287A35681F3 /* Pods_ankicopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ankicopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E2D6B2D513357F5374E204 /* Pods-ankicopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ankicopy.release.xcconfig"; path = "Target Support Files/Pods-ankicopy/Pods-ankicopy.release.xcconfig"; sourceTree = "<group>"; };
+		A64EB233F83D26509E14A8A6 /* Pods-ankicopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ankicopy.debug.xcconfig"; path = "Target Support Files/Pods-ankicopy/Pods-ankicopy.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7C66342551D5DD00C37C65 /* ankicopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ankicopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C66372551D5DD00C37C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7C66392551D5DD00C37C65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		CE7C66552551D94000C37C65 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		CE7C66592551DCA300C37C65 /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
 		CEAB14192551E5C3001E8369 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		CEAB141C25530509001E8369 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369AEA06CA6176371EFDE197 /* Pods_ankicopy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CD9D62F55E912B803043CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A64EB233F83D26509E14A8A6 /* Pods-ankicopy.debug.xcconfig */,
+				A3E2D6B2D513357F5374E204 /* Pods-ankicopy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A3F0477687B62A212B05D42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47FD0038A14CD287A35681F3 /* Pods_ankicopy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE7C662B2551D5DD00C37C65 = {
 			isa = PBXGroup;
 			children = (
 				CE7C66362551D5DD00C37C65 /* ankicopy */,
 				CE7C66352551D5DD00C37C65 /* Products */,
+				5CD9D62F55E912B803043CA4 /* Pods */,
+				7A3F0477687B62A212B05D42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7C66522551D63300C37C65 /* Card.swift */,
+				CEAB141C25530509001E8369 /* ImagePicker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7C664B2551D5E000C37C65 /* Build configuration list for PBXNativeTarget "ankicopy" */;
 			buildPhases = (
+				1D6DA6440C56C74B6576A986 /* [CP] Check Pods Manifest.lock */,
 				CE7C66302551D5DD00C37C65 /* Sources */,
 				CE7C66312551D5DD00C37C65 /* Frameworks */,
 				CE7C66322551D5DD00C37C65 /* Resources */,
+				A321C5E4BB3450BAD64A6141 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D6DA6440C56C74B6576A986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ankicopy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A321C5E4BB3450BAD64A6141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ankicopy/Pods-ankicopy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ankicopy/Pods-ankicopy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ankicopy/Pods-ankicopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE7C66302551D5DD00C37C65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,6 +251,7 @@
 				CE7C663C2551D5DD00C37C65 /* AnkiViewController.swift in Sources */,
 				CE7C66562551D94000C37C65 /* CardTableViewCell.swift in Sources */,
 				CE7C665A2551DCA300C37C65 /* NewCardViewController.swift in Sources */,
+				CEAB141D25530509001E8369 /* ImagePicker.swift in Sources */,
 				CE7C66382551D5DD00C37C65 /* AppDelegate.swift in Sources */,
 				CEAB141A2551E5C3001E8369 /* CardViewController.swift in Sources */,
 				CE7C66532551D63300C37C65 /* Card.swift in Sources */,
@@ -327,12 +400,14 @@
 		};
 		CE7C664C2551D5E000C37C65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64EB233F83D26509E14A8A6 /* Pods-ankicopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6U6HN93VT;
 				INFOPLIST_FILE = ankicopy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,12 +421,14 @@
 		};
 		CE7C664D2551D5E000C37C65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E2D6B2D513357F5374E204 /* Pods-ankicopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6U6HN93VT;
 				INFOPLIST_FILE = ankicopy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
