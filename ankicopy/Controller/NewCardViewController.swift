@@ -7,8 +7,9 @@
 
 import UIKit
 import CoreData
+import CropViewController
 
-class NewCardViewController: UIViewController, UITextViewDelegate, ImagePickerDelegate {
+class NewCardViewController: UIViewController, UITextViewDelegate, ImagePickerDelegate{
     
     var newCard: Card?
     var imagePicker: ImagePicker!
@@ -16,8 +17,7 @@ class NewCardViewController: UIViewController, UITextViewDelegate, ImagePickerDe
     var cardName: String?
     var cardDescription: String?
     
-    @IBAction func didEndEnteringName(_ sender: Any) {
-    }
+    
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
@@ -80,10 +80,9 @@ class NewCardViewController: UIViewController, UITextViewDelegate, ImagePickerDe
         view.endEditing(true)
     }
     func didSelect(image: UIImage?) {
-        self.image = image
         if let image = image{
-            imageView.image = image
-            imageView.contentMode = .scaleAspectFill
+            self.image = image
+            presentCropViewController()
         }
     }
     
@@ -120,4 +119,24 @@ class NewCardViewController: UIViewController, UITextViewDelegate, ImagePickerDe
     
 }
 
+extension NewCardViewController: CropViewControllerDelegate{
+    func presentCropViewController() {
+        guard let image = self.image else {return}
+      
+        let cropViewController = CropViewController(image: image)
+        cropViewController.delegate = self
+        present(cropViewController, animated: true, completion: nil)
+    }
+
+    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        self.image = image
+        self.imageView.image = image
+        self.imageView.contentMode = .scaleAspectFill
+        cropViewController.dismiss(animated: true, completion: {})
+//        cropViewController.dismissAnimatedFrom(cropViewController, withCroppedImage: image, toView: imageView, toFrame: CGRect(), setup: {}, completion: {() in
+//            self.imageView.image = image
+//            self.imageView.contentMode = .scaleAspectFill
+//        })
+    }
+}
 

@@ -74,7 +74,7 @@
                                     <imageReference key="image" image="plus.circle" catalog="system" symbolScale="large"/>
                                 </state>
                                 <connections>
-                                    <segue destination="sFt-09-Ctp" kind="show" identifier="FromAnkiToNewCard" id="mR2-Lf-jkJ"/>
+                                    <segue destination="sFt-09-Ctp" kind="presentation" identifier="FromAnkiToNewCard" modalPresentationStyle="fullScreen" id="mR2-Lf-jkJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,11 +106,11 @@
             <objects>
                 <viewController id="sFt-09-Ctp" customClass="NewCardViewController" customModule="ankicopy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bX8-eW-e0d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daq-6E-VNj">
-                                <rect key="frame" x="46" y="86" width="143" height="21"/>
+                                <rect key="frame" x="46" y="130" width="143" height="21"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="5dg-CL-Mvm"/>
@@ -121,25 +121,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-Pu-BqW">
-                                <rect key="frame" x="46" y="177" width="321" height="423"/>
+                                <rect key="frame" x="46" y="221" width="321" height="433"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-Mw-WSb">
-                                <rect key="frame" x="46" y="125" width="321" height="34"/>
+                                <rect key="frame" x="46" y="169" width="321" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <action selector="didEndEnteringName:" destination="sFt-09-Ctp" eventType="editingDidEnd" id="y5I-Bt-oAp"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-0r-yOm">
-                                <rect key="frame" x="167" y="760" width="80" height="39"/>
+                                <rect key="frame" x="167" y="814" width="80" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="6dB-X6-rJe"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="dFX-qo-4Od"/>
@@ -154,7 +151,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9u-ZY-sin">
-                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                <rect key="frame" x="20" y="64" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="88D-vh-eov"/>
                                     <constraint firstAttribute="width" constant="35" id="WFa-QC-MW1"/>
@@ -168,7 +165,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqR-Vm-npO">
-                                <rect key="frame" x="149.5" y="664.5" width="115" height="48"/>
+                                <rect key="frame" x="149.5" y="718.5" width="115" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="bv1-C7-MXV"/>
                                     <constraint firstAttribute="width" constant="115" id="lzc-KY-XCV"/>
@@ -183,7 +180,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.fill.on.rectangle.angled.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-0V-lOv">
-                                <rect key="frame" x="43" y="624" width="98.5" height="128"/>
+                                <rect key="frame" x="43" y="678" width="98.5" height="128"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
